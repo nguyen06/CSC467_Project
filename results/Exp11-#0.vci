@@ -1,0 +1,95 @@
+file 3903 1512159516                                            
+version 2
+run Exp11-0-20171201-11:39:22-2681
+attr configname Exp11
+attr datetime 20171201-11:39:22
+attr experiment Exp11
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network DiffservNetwork
+attr processid 2681
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.R?.ppp[*].queue.wrr.weights "\"10 9 8 7 0\""
+param **.H{1..8}.numUdpApps 2
+param **.H{9..11}.numUdpApps 2
+param **.H{1..4}.udpApp[0].typename "\"UDPBasicBurst\""
+param **.H{9..11}.udpApp[0].typename "\"UDPBasicBurst\""
+param **.H1.udpApp[0].destAddresses "\"H5\""
+param **.H2.udpApp[0].destAddresses "\"H6\""
+param **.H3.udpApp[0].destAddresses "\"H5\""
+param **.H4.udpApp[0].destAddresses "\"H7\""
+param **.H9.udpApp[0].destAddresses "\"H8\""
+param **.H10.udpApp[0].destAddresses "\"H7\""
+param **.H11.udpApp[0].destAddresses "\"H7\""
+param **.H{1..4}.udpApp[0].chooseDestAddrMode "\"once\""
+param **.H{1..4}.udpApp[0].destPort 2000
+param **.H{1..4}.udpApp[0].startTime uniform(1s,2s)
+param **.H{1..4}.udpApp[0].stopTime 1200s
+param **.H{1..4}.udpApp[0].messageLength 172B
+param **.H{1..4}.udpApp[0].burstDuration exponential(0.352s)
+param **.H{1..4}.udpApp[0].sleepDuration exponential(0.650s)
+param **.H{1..4}.udpApp[0].sendInterval 20ms
+param **.H{9..11}.udpApp[0].chooseDestAddrMode "\"once\""
+param **.H{9..11}.udpApp[0].destPort 2000
+param **.H{9..11}.udpApp[0].startTime uniform(1s,2s)
+param **.H{9..11}.udpApp[0].stopTime 1200s
+param **.H{9..11}.udpApp[0].messageLength 172B
+param **.H{9..11}.udpApp[0].burstDuration exponential(0.352s)
+param **.H{9..11}.udpApp[0].sleepDuration exponential(0.650s)
+param **.H{9..11}.udpApp[0].sendInterval 20ms
+param **.H{5..8}.udpApp[0].typename "\"UDPBasicBurst\""
+param **.H{5..8}.udpApp[0].localPort 2000
+param **.H{5..8}.udpApp[0].delayLimit 0ms
+param **.H{5..8}.udpApp[0].destAddresses "\"\""
+param **.H{5..8}.udpApp[0].chooseDestAddrMode "\"once\""
+param **.H{5..8}.udpApp[0].destPort 0
+param **.H{5..8}.udpApp[0].messageLength 0B
+param **.H{5..8}.udpApp[0].burstDuration 0s
+param **.H{5..8}.udpApp[0].sleepDuration 0s
+param **.H{5..8}.udpApp[0].sendInterval 0ms
+param **.H{1..4}.udpApp[1].typename "\"UDPBasicApp\""
+param **.H{1..4}.udpApp[1].destPort 1000
+param **.H{1..4}.udpApp[1].startTime uniform(1s,2s)
+param **.H{1..4}.udpApp[1].stopTime 1200s
+param **.H{1..4}.udpApp[1].sendInterval 40ms
+param **.H{1..4}.udpApp[1].messageLength 500B
+param **.H{9..11}.udpApp[1].typename "\"UDPBasicApp\""
+param **.H{9..11}.udpApp[1].destPort 1000
+param **.H{9..11}.udpApp[1].startTime uniform(1s,2s)
+param **.H{9..11}.udpApp[1].stopTime 1200s
+param **.H{9..11}.udpApp[1].sendInterval 40ms
+param **.H{9..11}.udpApp[1].messageLength 500B
+param **.H1.udpApp[1].destAddresses "\"H5\""
+param **.H2.udpApp[1].destAddresses "\"H6\""
+param **.H3.udpApp[1].destAddresses "\"H5\""
+param **.H4.udpApp[1].destAddresses "\"H7\""
+param **.H9.udpApp[1].destAddresses "\"H8\""
+param **.H10.udpApp[1].destAddresses "\"H7\""
+param **.H11.udpApp[1].destAddresses "\"H7\""
+param **.H{5..8}.udpApp[1].typename "\"UDPSink\""
+param **.H{5..8}.udpApp[1].localPort 1000
+param **.edgeDatarate 500kbps
+param **.coreDatarate 500kbps
+param **.R?.eth[*].ingressTCType "\"TC1\""
+param **.ingressTC.numClasses 4
+param **.ingressTC.classifier.filters "xmldoc(\"filters.xml\", \"//experiment[@id='default']\")"
+param **.ingressTC.marker.dscps "\"AF11 AF21 AF31 AF41 BE\""
+param **.R?.ppp[*].queueType "\"DSQueue1\""
+param **.R?.ppp[*].queue.frameCapacity 100
+param **.queueType "\"DropTailQueue\""
+param **.queue.frameCapacity 100
+param **.queue.dataQueue.frameCapacity 100
+
+vector 0 DiffservNetwork.H8.udpApp[0] endToEndDelay:vector ETV
+attr interpolationmode none
+attr source messageAge(rcvdPk)
+attr title "delay, vector"
+attr unit s
+0	3807 95 344 514 1.439650596788 1.479627156788 3 0.01597236 0.0159958 0.04794052 0.0007660981855792
+
