@@ -58,10 +58,6 @@ module DSQueue1 like IOutputQueue
             frameCapacity = frameCapacity;
             @display("p=195,421");
         }
-        af4xQueue: DropTailQueue {
-            frameCapacity = frameCapacity;
-            @display("p=195,537");
-        }
         beQueue: DropTailQueue {
             frameCapacity = frameCapacity;
             @display("p=195,628");
@@ -73,22 +69,26 @@ module DSQueue1 like IOutputQueue
             @display("p=556,263");
         }
 
+        af4xQueue1: DropTailQueue {
+            frameCapacity = frameCapacity;
+            @display("p=195,495");
+        }
     connections:
         in --> classifier.in;
         classifier.outs++ --> efQueue.in;
         classifier.outs++ --> af1xQueue.in;
         classifier.outs++ --> af2xQueue.in;
         classifier.outs++ --> af3xQueue.in;
-        classifier.outs++ --> af4xQueue.in;
         classifier.defaultOut --> beQueue.in;
 
         af1xQueue.out --> wrr.in++;
         af2xQueue.out --> wrr.in++;
         af3xQueue.out --> wrr.in++;
-        af4xQueue.out --> wrr.in++;
         beQueue.out --> wrr.in++;
         efQueue.out --> priority.in++;
         wrr.out --> priority.in++;
         priority.out --> out;
+        classifier.outs++ --> af4xQueue1.in;
+        af4xQueue1.out --> wrr.in++;
 }
 

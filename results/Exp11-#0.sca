@@ -1,14 +1,14 @@
 version 2
-run Exp11-0-20171201-15:08:38-3114
+run Exp11-0-20171201-16:51:02-3925
 attr configname Exp11
-attr datetime 20171201-15:08:38
+attr datetime 20171201-16:51:02
 attr experiment Exp11
 attr inifile omnetpp11.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network DiffservNetwork11
-attr processid 3114
+attr processid 3925
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -58,32 +58,32 @@ param **.H{7..12}.udpApp[1].localPort 1000
 param **.edgeDatarate 500kbps
 param **.coreDatarate 1000kbps
 param **.R?.eth[*].ingressTCType "\"TC1\""
-param **.ingressTC.numClasses 4
+param **.ingressTC.numClasses 6
 param **.ingressTC.classifier.filters "xmldoc(\"filters.xml\", \"//experiment[@id='default']\")"
-param **.ingressTC.marker.dscps "\"AF11 AF21 AF31 AF41 BE\""
+param **.ingressTC.marker.dscps "\"EF AF11 AF21 AF31 AF41 BE\""
 param **.R?.ppp[*].queueType "\"DSQueue1\""
 param **.R?.ppp[*].queue.frameCapacity 100
 param **.queueType "\"DropTailQueue\""
 param **.queue.frameCapacity 100
 param **.queue.dataQueue.frameCapacity 100
 
-scalar DiffservNetwork11.R4.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.R4.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R4.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.R4.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.R4.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.R4.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.R4.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.R4.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.R4.eth[0].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R4.eth[1].mac "simulated time" 1250
+scalar DiffservNetwork11.R4.eth[0].mac "frames/sec sent" 1.8834228832697
+scalar DiffservNetwork11.R4.eth[0].mac "frames/sec rcvd" 0.62780762775657
+scalar DiffservNetwork11.R4.eth[0].mac "bits/sec sent" 2511.2305110263
+scalar DiffservNetwork11.R4.eth[0].mac "bits/sec rcvd" 321.43750541136
+scalar DiffservNetwork11.R4.eth[0].mac "rx channel idle (%)" 99.999638382806
+scalar DiffservNetwork11.R4.eth[0].mac "rx channel utilization (%)" 0.00036161719358778
+scalar DiffservNetwork11.R4.eth[1].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R4.eth[1].mac full-duplex 1
-scalar DiffservNetwork11.R4.eth[1].mac "frames/sec sent" 0
-scalar DiffservNetwork11.R4.eth[1].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.R4.eth[1].mac "bits/sec sent" 0
-scalar DiffservNetwork11.R4.eth[1].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.R4.eth[1].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.R4.eth[1].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R4.eth[2].mac "simulated time" 1250
+scalar DiffservNetwork11.R4.eth[1].mac "frames/sec sent" 3.7668457665394
+scalar DiffservNetwork11.R4.eth[1].mac "frames/sec rcvd" 0.62780762775657
+scalar DiffservNetwork11.R4.eth[1].mac "bits/sec sent" 14032.756095615
+scalar DiffservNetwork11.R4.eth[1].mac "bits/sec rcvd" 321.43750541136
+scalar DiffservNetwork11.R4.eth[1].mac "rx channel idle (%)" 99.999638382806
+scalar DiffservNetwork11.R4.eth[1].mac "rx channel utilization (%)" 0.00036161719358778
+scalar DiffservNetwork11.R4.eth[2].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R4.eth[2].mac full-duplex 1
 scalar DiffservNetwork11.R4.eth[2].mac "frames/sec sent" 0
 scalar DiffservNetwork11.R4.eth[2].mac "frames/sec rcvd" 0
@@ -91,39 +91,39 @@ scalar DiffservNetwork11.R4.eth[2].mac "bits/sec sent" 0
 scalar DiffservNetwork11.R4.eth[2].mac "bits/sec rcvd" 0
 scalar DiffservNetwork11.R4.eth[2].mac "rx channel idle (%)" 100
 scalar DiffservNetwork11.R4.eth[2].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R2.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.R2.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R2.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.R2.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.R2.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.R2.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.R2.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.R2.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.R2.eth[0].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R2.eth[1].mac "simulated time" 1250
+scalar DiffservNetwork11.R2.eth[0].mac "frames/sec sent" 0.62780762775657
+scalar DiffservNetwork11.R2.eth[0].mac "frames/sec rcvd" 5.0224610220526
+scalar DiffservNetwork11.R2.eth[0].mac "bits/sec sent" 321.43750541136
+scalar DiffservNetwork11.R2.eth[0].mac "bits/sec rcvd" 7985.7130250636
+scalar DiffservNetwork11.R2.eth[0].mac "rx channel idle (%)" 99.99169284947
+scalar DiffservNetwork11.R2.eth[0].mac "rx channel utilization (%)" 0.0083071505304749
+scalar DiffservNetwork11.R2.eth[1].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R2.eth[1].mac full-duplex 1
-scalar DiffservNetwork11.R2.eth[1].mac "frames/sec sent" 0
-scalar DiffservNetwork11.R2.eth[1].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.R2.eth[1].mac "bits/sec sent" 0
-scalar DiffservNetwork11.R2.eth[1].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.R2.eth[1].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.R2.eth[1].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R2.eth[2].mac "simulated time" 1250
+scalar DiffservNetwork11.R2.eth[1].mac "frames/sec sent" 0.62780762775657
+scalar DiffservNetwork11.R2.eth[1].mac "frames/sec rcvd" 4.394653394296
+scalar DiffservNetwork11.R2.eth[1].mac "bits/sec sent" 321.43750541136
+scalar DiffservNetwork11.R2.eth[1].mac "bits/sec rcvd" 16775.019813656
+scalar DiffservNetwork11.R2.eth[1].mac "rx channel idle (%)" 99.982943722369
+scalar DiffservNetwork11.R2.eth[1].mac "rx channel utilization (%)" 0.01705627763089
+scalar DiffservNetwork11.R2.eth[2].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R2.eth[2].mac full-duplex 1
-scalar DiffservNetwork11.R2.eth[2].mac "frames/sec sent" 0
-scalar DiffservNetwork11.R2.eth[2].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.R2.eth[2].mac "bits/sec sent" 0
-scalar DiffservNetwork11.R2.eth[2].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.R2.eth[2].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.R2.eth[2].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R1.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.R2.eth[2].mac "frames/sec sent" 0.62780762775657
+scalar DiffservNetwork11.R2.eth[2].mac "frames/sec rcvd" 2.5112305110263
+scalar DiffservNetwork11.R2.eth[2].mac "bits/sec sent" 321.43750541136
+scalar DiffservNetwork11.R2.eth[2].mac "bits/sec rcvd" 3606.1270138337
+scalar DiffservNetwork11.R2.eth[2].mac "rx channel idle (%)" 99.996233154233
+scalar DiffservNetwork11.R2.eth[2].mac "rx channel utilization (%)" 0.0037668457665394
+scalar DiffservNetwork11.R1.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R1.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.R1.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.R1.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.R1.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.R1.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.R1.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.R1.eth[0].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R1.eth[1].mac "simulated time" 1250
+scalar DiffservNetwork11.R1.eth[0].mac "frames/sec sent" 0.62780762775657
+scalar DiffservNetwork11.R1.eth[0].mac "frames/sec rcvd" 2.5112305110263
+scalar DiffservNetwork11.R1.eth[0].mac "bits/sec sent" 321.43750541136
+scalar DiffservNetwork11.R1.eth[0].mac "bits/sec rcvd" 3606.1270138337
+scalar DiffservNetwork11.R1.eth[0].mac "rx channel idle (%)" 99.996233154233
+scalar DiffservNetwork11.R1.eth[0].mac "rx channel utilization (%)" 0.0037668457665394
+scalar DiffservNetwork11.R1.eth[1].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R1.eth[1].mac full-duplex 1
 scalar DiffservNetwork11.R1.eth[1].mac "frames/sec sent" 0
 scalar DiffservNetwork11.R1.eth[1].mac "frames/sec rcvd" 0
@@ -131,7 +131,7 @@ scalar DiffservNetwork11.R1.eth[1].mac "bits/sec sent" 0
 scalar DiffservNetwork11.R1.eth[1].mac "bits/sec rcvd" 0
 scalar DiffservNetwork11.R1.eth[1].mac "rx channel idle (%)" 100
 scalar DiffservNetwork11.R1.eth[1].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R1.eth[2].mac "simulated time" 1250
+scalar DiffservNetwork11.R1.eth[2].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R1.eth[2].mac full-duplex 1
 scalar DiffservNetwork11.R1.eth[2].mac "frames/sec sent" 0
 scalar DiffservNetwork11.R1.eth[2].mac "frames/sec rcvd" 0
@@ -139,15 +139,15 @@ scalar DiffservNetwork11.R1.eth[2].mac "bits/sec sent" 0
 scalar DiffservNetwork11.R1.eth[2].mac "bits/sec rcvd" 0
 scalar DiffservNetwork11.R1.eth[2].mac "rx channel idle (%)" 100
 scalar DiffservNetwork11.R1.eth[2].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R3.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.R3.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R3.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.R3.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.R3.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.R3.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.R3.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.R3.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.R3.eth[0].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R3.eth[1].mac "simulated time" 1250
+scalar DiffservNetwork11.R3.eth[0].mac "frames/sec sent" 1.2556152555131
+scalar DiffservNetwork11.R3.eth[0].mac "frames/sec rcvd" 0.62780762775657
+scalar DiffservNetwork11.R3.eth[0].mac "bits/sec sent" 1416.3340082188
+scalar DiffservNetwork11.R3.eth[0].mac "bits/sec rcvd" 321.43750541136
+scalar DiffservNetwork11.R3.eth[0].mac "rx channel idle (%)" 99.999638382806
+scalar DiffservNetwork11.R3.eth[0].mac "rx channel utilization (%)" 0.00036161719358778
+scalar DiffservNetwork11.R3.eth[1].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R3.eth[1].mac full-duplex 1
 scalar DiffservNetwork11.R3.eth[1].mac "frames/sec sent" 0
 scalar DiffservNetwork11.R3.eth[1].mac "frames/sec rcvd" 0
@@ -155,7 +155,7 @@ scalar DiffservNetwork11.R3.eth[1].mac "bits/sec sent" 0
 scalar DiffservNetwork11.R3.eth[1].mac "bits/sec rcvd" 0
 scalar DiffservNetwork11.R3.eth[1].mac "rx channel idle (%)" 100
 scalar DiffservNetwork11.R3.eth[1].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.R3.eth[2].mac "simulated time" 1250
+scalar DiffservNetwork11.R3.eth[2].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.R3.eth[2].mac full-duplex 1
 scalar DiffservNetwork11.R3.eth[2].mac "frames/sec sent" 0
 scalar DiffservNetwork11.R3.eth[2].mac "frames/sec rcvd" 0
@@ -163,28 +163,28 @@ scalar DiffservNetwork11.R3.eth[2].mac "bits/sec sent" 0
 scalar DiffservNetwork11.R3.eth[2].mac "bits/sec rcvd" 0
 scalar DiffservNetwork11.R3.eth[2].mac "rx channel idle (%)" 100
 scalar DiffservNetwork11.R3.eth[2].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.H1.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H1.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H1.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.H1.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.H1.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.H1.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.H1.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.H1.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.H1.eth[0].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.H1.udpApp[0] "Total sent" 0
+scalar DiffservNetwork11.H1.eth[0].mac "frames/sec sent" 2.5112305110263
+scalar DiffservNetwork11.H1.eth[0].mac "frames/sec rcvd" 0.62780762775657
+scalar DiffservNetwork11.H1.eth[0].mac "bits/sec sent" 3606.1270138337
+scalar DiffservNetwork11.H1.eth[0].mac "bits/sec rcvd" 321.43750541136
+scalar DiffservNetwork11.H1.eth[0].mac "rx channel idle (%)" 99.999638382806
+scalar DiffservNetwork11.H1.eth[0].mac "rx channel utilization (%)" 0.00036161719358778
+scalar DiffservNetwork11.H1.udpApp[0] "Total sent" 3
 scalar DiffservNetwork11.H1.udpApp[0] "Total received" 0
 scalar DiffservNetwork11.H1.udpApp[0] "Total deleted" 0
-scalar DiffservNetwork11.H1.udpApp[0] sentPk:count 0
+scalar DiffservNetwork11.H1.udpApp[0] sentPk:count 3
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
-scalar DiffservNetwork11.H1.udpApp[1] "packets sent" 0
+scalar DiffservNetwork11.H1.udpApp[1] "packets sent" 1
 scalar DiffservNetwork11.H1.udpApp[1] "packets received" 0
-scalar DiffservNetwork11.H1.udpApp[1] sentPk:count 0
+scalar DiffservNetwork11.H1.udpApp[1] sentPk:count 1
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
-scalar DiffservNetwork11.H2.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H2.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H2.eth[0].mac full-duplex 1
 scalar DiffservNetwork11.H2.eth[0].mac "frames/sec sent" 0
 scalar DiffservNetwork11.H2.eth[0].mac "frames/sec rcvd" 0
@@ -205,7 +205,7 @@ scalar DiffservNetwork11.H2.udpApp[1] sentPk:count 0
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
-scalar DiffservNetwork11.H3.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H3.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H3.eth[0].mac full-duplex 1
 scalar DiffservNetwork11.H3.eth[0].mac "frames/sec sent" 0
 scalar DiffservNetwork11.H3.eth[0].mac "frames/sec rcvd" 0
@@ -226,18 +226,18 @@ scalar DiffservNetwork11.H3.udpApp[1] sentPk:count 0
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
-scalar DiffservNetwork11.H7.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H7.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H7.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.H7.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.H7.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.H7.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.H7.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.H7.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.H7.eth[0].mac "rx channel utilization (%)" 0
+scalar DiffservNetwork11.H7.eth[0].mac "frames/sec sent" 0.62780762775657
+scalar DiffservNetwork11.H7.eth[0].mac "frames/sec rcvd" 1.2556152555131
+scalar DiffservNetwork11.H7.eth[0].mac "bits/sec sent" 321.43750541136
+scalar DiffservNetwork11.H7.eth[0].mac "bits/sec rcvd" 1416.3340082188
+scalar DiffservNetwork11.H7.eth[0].mac "rx channel idle (%)" 99.998503306615
+scalar DiffservNetwork11.H7.eth[0].mac "rx channel utilization (%)" 0.0014966933845717
 scalar DiffservNetwork11.H7.udpApp[0] "Total sent" 0
-scalar DiffservNetwork11.H7.udpApp[0] "Total received" 0
+scalar DiffservNetwork11.H7.udpApp[0] "Total received" 1
 scalar DiffservNetwork11.H7.udpApp[0] "Total deleted" 0
-scalar DiffservNetwork11.H7.udpApp[0] rcvdPk:count 0
+scalar DiffservNetwork11.H7.udpApp[0] rcvdPk:count 1
 attr interpolationmode none
 attr source rcvdPk
 attr title "packets received, count"
@@ -245,7 +245,7 @@ scalar DiffservNetwork11.H7.udpApp[1] rcvdPk:count 0
 attr interpolationmode none
 attr source rcvdPk
 attr title "packets received, count"
-scalar DiffservNetwork11.H9.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H9.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H9.eth[0].mac full-duplex 1
 scalar DiffservNetwork11.H9.eth[0].mac "frames/sec sent" 0
 scalar DiffservNetwork11.H9.eth[0].mac "frames/sec rcvd" 0
@@ -264,7 +264,7 @@ scalar DiffservNetwork11.H9.udpApp[1] rcvdPk:count 0
 attr interpolationmode none
 attr source rcvdPk
 attr title "packets received, count"
-scalar DiffservNetwork11.H8.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H8.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H8.eth[0].mac full-duplex 1
 scalar DiffservNetwork11.H8.eth[0].mac "frames/sec sent" 0
 scalar DiffservNetwork11.H8.eth[0].mac "frames/sec rcvd" 0
@@ -283,18 +283,18 @@ scalar DiffservNetwork11.H8.udpApp[1] rcvdPk:count 0
 attr interpolationmode none
 attr source rcvdPk
 attr title "packets received, count"
-scalar DiffservNetwork11.H4.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H4.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H4.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.H4.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.H4.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.H4.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.H4.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.H4.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.H4.eth[0].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.H4.udpApp[0] "Total sent" 0
+scalar DiffservNetwork11.H4.eth[0].mac "frames/sec sent" 2.5112305110263
+scalar DiffservNetwork11.H4.eth[0].mac "frames/sec rcvd" 0.62780762775657
+scalar DiffservNetwork11.H4.eth[0].mac "bits/sec sent" 3606.1270138337
+scalar DiffservNetwork11.H4.eth[0].mac "bits/sec rcvd" 321.43750541136
+scalar DiffservNetwork11.H4.eth[0].mac "rx channel idle (%)" 99.999638382806
+scalar DiffservNetwork11.H4.eth[0].mac "rx channel utilization (%)" 0.00036161719358778
+scalar DiffservNetwork11.H4.udpApp[0] "Total sent" 3
 scalar DiffservNetwork11.H4.udpApp[0] "Total received" 0
 scalar DiffservNetwork11.H4.udpApp[0] "Total deleted" 0
-scalar DiffservNetwork11.H4.udpApp[0] sentPk:count 0
+scalar DiffservNetwork11.H4.udpApp[0] sentPk:count 3
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
@@ -304,18 +304,18 @@ scalar DiffservNetwork11.H4.udpApp[1] sentPk:count 0
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
-scalar DiffservNetwork11.H5.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H5.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H5.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.H5.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.H5.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.H5.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.H5.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.H5.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.H5.eth[0].mac "rx channel utilization (%)" 0
-scalar DiffservNetwork11.H5.udpApp[0] "Total sent" 0
+scalar DiffservNetwork11.H5.eth[0].mac "frames/sec sent" 5.0224610220526
+scalar DiffservNetwork11.H5.eth[0].mac "frames/sec rcvd" 0.62780762775657
+scalar DiffservNetwork11.H5.eth[0].mac "bits/sec sent" 7985.7130250636
+scalar DiffservNetwork11.H5.eth[0].mac "bits/sec rcvd" 321.43750541136
+scalar DiffservNetwork11.H5.eth[0].mac "rx channel idle (%)" 99.999638382806
+scalar DiffservNetwork11.H5.eth[0].mac "rx channel utilization (%)" 0.00036161719358778
+scalar DiffservNetwork11.H5.udpApp[0] "Total sent" 7
 scalar DiffservNetwork11.H5.udpApp[0] "Total received" 0
 scalar DiffservNetwork11.H5.udpApp[0] "Total deleted" 0
-scalar DiffservNetwork11.H5.udpApp[0] sentPk:count 0
+scalar DiffservNetwork11.H5.udpApp[0] sentPk:count 7
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
@@ -325,14 +325,14 @@ scalar DiffservNetwork11.H5.udpApp[1] sentPk:count 0
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
-scalar DiffservNetwork11.H6.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H6.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H6.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.H6.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.H6.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.H6.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.H6.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.H6.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.H6.eth[0].mac "rx channel utilization (%)" 0
+scalar DiffservNetwork11.H6.eth[0].mac "frames/sec sent" 4.394653394296
+scalar DiffservNetwork11.H6.eth[0].mac "frames/sec rcvd" 0.62780762775657
+scalar DiffservNetwork11.H6.eth[0].mac "bits/sec sent" 16775.019813656
+scalar DiffservNetwork11.H6.eth[0].mac "bits/sec rcvd" 321.43750541136
+scalar DiffservNetwork11.H6.eth[0].mac "rx channel idle (%)" 99.999638382806
+scalar DiffservNetwork11.H6.eth[0].mac "rx channel utilization (%)" 0.00036161719358778
 scalar DiffservNetwork11.H6.udpApp[0] "Total sent" 0
 scalar DiffservNetwork11.H6.udpApp[0] "Total received" 0
 scalar DiffservNetwork11.H6.udpApp[0] "Total deleted" 0
@@ -340,24 +340,24 @@ scalar DiffservNetwork11.H6.udpApp[0] sentPk:count 0
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
-scalar DiffservNetwork11.H6.udpApp[1] "packets sent" 0
+scalar DiffservNetwork11.H6.udpApp[1] "packets sent" 6
 scalar DiffservNetwork11.H6.udpApp[1] "packets received" 0
-scalar DiffservNetwork11.H6.udpApp[1] sentPk:count 0
+scalar DiffservNetwork11.H6.udpApp[1] sentPk:count 6
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
-scalar DiffservNetwork11.H10.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H10.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H10.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.H10.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.H10.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.H10.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.H10.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.H10.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.H10.eth[0].mac "rx channel utilization (%)" 0
+scalar DiffservNetwork11.H10.eth[0].mac "frames/sec sent" 0.62780762775657
+scalar DiffservNetwork11.H10.eth[0].mac "frames/sec rcvd" 1.8834228832697
+scalar DiffservNetwork11.H10.eth[0].mac "bits/sec sent" 321.43750541136
+scalar DiffservNetwork11.H10.eth[0].mac "bits/sec rcvd" 2511.2305110263
+scalar DiffservNetwork11.H10.eth[0].mac "rx channel idle (%)" 99.997368230424
+scalar DiffservNetwork11.H10.eth[0].mac "rx channel utilization (%)" 0.0026317695755555
 scalar DiffservNetwork11.H10.udpApp[0] "Total sent" 0
-scalar DiffservNetwork11.H10.udpApp[0] "Total received" 0
+scalar DiffservNetwork11.H10.udpApp[0] "Total received" 2
 scalar DiffservNetwork11.H10.udpApp[0] "Total deleted" 0
-scalar DiffservNetwork11.H10.udpApp[0] rcvdPk:count 0
+scalar DiffservNetwork11.H10.udpApp[0] rcvdPk:count 2
 attr interpolationmode none
 attr source rcvdPk
 attr title "packets received, count"
@@ -365,14 +365,14 @@ scalar DiffservNetwork11.H10.udpApp[1] rcvdPk:count 0
 attr interpolationmode none
 attr source rcvdPk
 attr title "packets received, count"
-scalar DiffservNetwork11.H12.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H12.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H12.eth[0].mac full-duplex 1
-scalar DiffservNetwork11.H12.eth[0].mac "frames/sec sent" 0
-scalar DiffservNetwork11.H12.eth[0].mac "frames/sec rcvd" 0
-scalar DiffservNetwork11.H12.eth[0].mac "bits/sec sent" 0
-scalar DiffservNetwork11.H12.eth[0].mac "bits/sec rcvd" 0
-scalar DiffservNetwork11.H12.eth[0].mac "rx channel idle (%)" 100
-scalar DiffservNetwork11.H12.eth[0].mac "rx channel utilization (%)" 0
+scalar DiffservNetwork11.H12.eth[0].mac "frames/sec sent" 0.62780762775657
+scalar DiffservNetwork11.H12.eth[0].mac "frames/sec rcvd" 3.7668457665394
+scalar DiffservNetwork11.H12.eth[0].mac "bits/sec sent" 321.43750541136
+scalar DiffservNetwork11.H12.eth[0].mac "bits/sec rcvd" 14032.756095615
+scalar DiffservNetwork11.H12.eth[0].mac "rx channel idle (%)" 99.985726165775
+scalar DiffservNetwork11.H12.eth[0].mac "rx channel utilization (%)" 0.014273834224673
 scalar DiffservNetwork11.H12.udpApp[0] "Total sent" 0
 scalar DiffservNetwork11.H12.udpApp[0] "Total received" 0
 scalar DiffservNetwork11.H12.udpApp[0] "Total deleted" 0
@@ -380,11 +380,11 @@ scalar DiffservNetwork11.H12.udpApp[0] rcvdPk:count 0
 attr interpolationmode none
 attr source rcvdPk
 attr title "packets received, count"
-scalar DiffservNetwork11.H12.udpApp[1] rcvdPk:count 0
+scalar DiffservNetwork11.H12.udpApp[1] rcvdPk:count 5
 attr interpolationmode none
 attr source rcvdPk
 attr title "packets received, count"
-scalar DiffservNetwork11.H11.eth[0].mac "simulated time" 1250
+scalar DiffservNetwork11.H11.eth[0].mac "simulated time" 1.592844616389
 scalar DiffservNetwork11.H11.eth[0].mac full-duplex 1
 scalar DiffservNetwork11.H11.eth[0].mac "frames/sec sent" 0
 scalar DiffservNetwork11.H11.eth[0].mac "frames/sec rcvd" 0

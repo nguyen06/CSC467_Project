@@ -116,16 +116,17 @@ network DiffservNetwork11
         R3.ethg++ <--> ethernetline <--> H7.ethg++;
         R3.ethg++ <--> ethernetline <--> H8.ethg++;
         R3.ethg++ <--> ethernetline <--> H9.ethg++;
-        R2.ethg++ <--> ethernetline <--> H4.ethg++;
         R2.ethg++ <--> ethernetline <--> H5.ethg++;
         H10.ethg++ <--> ethernetline <--> R4.ethg++;
+        
         H12.ethg++ <--> ethernetline <--> R4.ethg++;
         H11.ethg++ <--> ethernetline <--> R4.ethg++;
         R1.pppg++ <--> edgeline <--> R2.pppg++;
         R4.pppg++ <--> edgeline <--> R3.pppg++;
-        R2.ethg++ <--> coreline <--> H6.ethg++;
+        R2.ethg++ <--> ethernetline <--> H6.ethg++;
         R2.pppg++ <--> edgeline <--> R10.pppg++;
         R11.pppg++ <--> edgeline <--> R3.pppg++;
-        R10.pppg++ <--> coreline <-->R11.pppg++;
+        R10.pppg++ <--> coreline <--> R11.pppg++;
+        H4.ethg++ <--> ethernetline <--> R2.ethg++;
 }
 
